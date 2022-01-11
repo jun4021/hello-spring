@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import javax.persistence.EntityManager;
 import javax.sql.DataSource;
 
-@Configuration // Bean 등록하기
+@Configuration // Bean 등록하기   asdf
 public class SpringConfig {
 
     private DataSource dataSource;
