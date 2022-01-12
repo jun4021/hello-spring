@@ -2,21 +2,21 @@
 ## 목차
 * [스프링 프로젝트 환경설정](#스프링-프로젝트-환경설정)
 * [스프링 웹 기초](#스프링-웹-기초)
-  * [Welcome page](#1.-Welcome-page)
-  * [MVC](#2.-MVC)
+  * [Welcome page](#1-welcome-page)
+  * [MVC](#2-mvc)
 * [백엔드 개발 예제](#백엔드-개발-예제)
-  * [간단한 소개](#1.-간단한-소개)
-  * [도메인](#2.-Domain)
-  * [리포지토리](#3.-Repository)
-  * [서비스](#4.-Service)
-  * [컨트롤러](#5.-Controller)
-  * [테스트 케이스](#6.-Controller)
-  * [스프링 빈](#7.-Spring-Bean)
+  * [간단한 소개](#1-간단한-소개)
+  * [도메인](#2-domain)
+  * [리포지토리](#3-repository)
+  * [서비스](#4-service)
+  * [컨트롤러](#5-controller)
+  * [테스트 케이스](#6-controller)
+  * [스프링 빈](#7-spring-bean)
 * 스프링 DB 기술
   * jdbcTemplate
   * JPA
 --------
-#스프링 프로젝트 환경설정
+## 스프링 프로젝트 환경설정
 - 스프링 부트 스타터 사이트 (https://start.spring.io)
 - 다음과 같이 설정 후 프로젝트를 생성한다.
 
@@ -26,10 +26,10 @@
 - 실행 시 내장 되어 있는 tomcat 웹 서버가 실행되는 것을 확인할 수 있다.
 - ```build.gradle``` : 이곳에서 각종 라이브러리를 추가한다.
 ---------
-#스프링 웹 기초
-#1. Welcome page
+## 스프링 웹 기초
+### 1. Welcome page
 - spring에서는 default welcome page로 ```src/main/resources/static/index.html```에서 첫 페이지를 불러온다.
-#2. MVC
+### 2. MVC
 
 - Model, View, Controller로 이루어진 디자인패턴이다.
  
@@ -71,8 +71,8 @@ public class HelloController {
 </html>
 ```
 -----
-# 백엔드 개발 예제
-#1. 간단한 소개
+## 백엔드 개발 예제
+### 1. 간단한 소개
 - DB : Id(자동으로 부여), name(사용자가 등록)
 - 기능 : 회원 등록, 조회
 
@@ -83,7 +83,7 @@ public class HelloController {
 - service: 회원 등록 및 회원 조회 기능 구현
 - controller: MVC 패턴을 관리하는 controller
 
-#2. Domain
+### 2. Domain
 - Class Member -> id, name
 ```java
 public class Member {
@@ -91,7 +91,7 @@ public class Member {
   private String name;
 }
 ```
-#3. Repository
+### 3. Repository
 (1) interface MemberRepository
 - 공통이 되는 기능들을 포함한 interface
 ```java
@@ -144,7 +144,7 @@ public class MemoryMemberRepository implements MemberRepository{
     }
 }
 ```
-#4. Service
+### 4. Service
 ```java
 public class MemberService {
     private final MemberRepository memberRepository;
@@ -181,8 +181,8 @@ public class MemberService {
     }
 }
 ```
-#5. Controller
-home.html
+### 5. Controller
+#### home.html
 ```html
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
@@ -235,7 +235,7 @@ public class MemberController {
     }
 }
 ```
-#6. Test
+### 6. Test
 - given -> when -> then 으로 정리
 
 (1) Repository
@@ -325,7 +325,7 @@ public void duplicateException(){
     
 }
 ```
-#7. Spring Bean
+### 7. Spring Bean
 (1) Component scan
 - ```@Controller, @Service, @Repository```는 ```@Component```를 포함하고 있어 자동으로 스프링 빈에 등록된다.
 - ```@Autowired```는 자동으로 Spring Container에서 연관된 객체를 주입해 준다.(Dependency Injection)
