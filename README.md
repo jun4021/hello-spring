@@ -12,7 +12,7 @@
   * [컨트롤러](#5-controller)
   * [테스트 케이스](#6-controller)
   * [스프링 빈](#7-spring-bean)
-* 스프링 DB 기술
+* [스프링 DB 기술](#스프링-db-기술)
   * jdbcTemplate
   * JPA
 --------
@@ -350,3 +350,4 @@ public class SpringConfig {
 
 }
 ```
+### 스프링 db 기술
