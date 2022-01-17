@@ -13,7 +13,7 @@
   * [테스트 케이스](#6-controller)
   * [스프링 빈](#7-spring-bean)
 * [스프링 DB 기술](#스프링-db-기술)
-  * jdbcTemplate
+  * [jdbcTemplate]
   * JPA
 --------
 ## 스프링 프로젝트 환경설정
