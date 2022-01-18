@@ -9,6 +9,7 @@ public class Member {
     private Long id; // system 내의 id 코드
     private String name;
 
+
     public Long getId() { // alt + insert
         return id;
     }
