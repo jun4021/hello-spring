@@ -1,4 +1,5 @@
 # Spring-boot
+
 ## 목차
 * [스프링 프로젝트 환경설정](#스프링-프로젝트-환경설정)
 * [스프링 웹 기초](#스프링-웹-기초)
@@ -12,9 +13,8 @@
   * [컨트롤러](#5-controller)
   * [테스트 케이스](#6-controller)
   * [스프링 빈](#7-spring-bean)
-* [스프링 DB 기술](#스프링-db-기술)
-  * jdbcTemplate
-  * JPA
+
+*  
 --------
 ## 스프링 프로젝트 환경설정
 - 스프링 부트 스타터 사이트 (https://start.spring.io)
@@ -350,4 +350,3 @@ public class SpringConfig {
 
 }
 ```
-### 스프링 db 기술
