@@ -14,7 +14,7 @@
   * [테스트 케이스](#6-controller)
   * [스프링 빈](#7-spring-bean)
 
-*  
+*  SOLID
 --------
 ## 스프링 프로젝트 환경설정
 - 스프링 부트 스타터 사이트 (https://start.spring.io)
